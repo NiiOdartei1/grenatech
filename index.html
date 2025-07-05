@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreNaTech NGO</title>
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/css/style.css" />
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a6d45d, #a55a8c);
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #fff !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #f8f9fa !important;
+    }
+
+    .hero {
+      padding: 60px 20px;
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .hero-image img {
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 255, 200, 0.3); /* Futuristic glow */
+      backdrop-filter: blur(8px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 32px rgba(0, 255, 200, 0.5);
+    }
+
+    .btn-custom {
+      background-color: #fff;
+      color: #0072ff;
+      font-weight: 600;
+      padding: 10px 25px;
+      border-radius: 30px;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #e0e0e0;
+    }
+
+    section {
+      padding: 10px 20px;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #fff;
+      color: #0072ff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      display: none;
+      z-index: 999;
+    }
+
+    #backToTop:hover {
+      background: #e0e0e0;
+    }
+
+    .footer-social a {
+      color: white;
+      font-size: 1.4rem;
+      margin-right: 15px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .footer-social a:hover {
+      color: #ccc;
+    }
+
+    .hero-video-bg {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video-bg .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-video-bg .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hero-video-bg .hero-overlay-content {
+  position: relative;
+  z-index: 3;
+  padding: 80px 40px;
+  max-width: 700px;
+  margin-left: 2%;
+  text-align: left;
+}
+
+.hero-overlay-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-overlay-content p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero-overlay-content .btn-custom {
+  background-color: #fff;
+  color: #0072ff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.hero-overlay-content .btn-custom:hover {
+  background-color: #d3d3d3;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" data-aos="fade-down">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="https://i.postimg.cc/8P9rd9p4/Gre-Na-Tech-logo.png" alt="GreNaTech Logo" style="height: 50px; width: auto;" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-video-bg w-100">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="https://raw.githubusercontent.com/NiiOdartei1/greenatech-assets/main/1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
+  <div class="hero-overlay-content container">
+  <h1 data-aos="fade-right" data-aos-delay="200">Empowering Green Innovation</h1>
+  <p data-aos="fade-left" data-aos-delay="400">
+    At <strong>GreNaTech</strong>, we drive environmental change through technology and sustainable solutions.
+    Our mission is to empower communities with clean energy, climate education, and eco‑friendly innovations.
+  </p>
+  <a href="about.html" class="btn btn-custom" data-aos="zoom-in" data-aos-delay="600">Learn More</a>
+</div>
+
+</section>
+
+
+    <!-- Mission Section -->
+    <section class="container text-center" data-aos="fade-up">
+      <h2 class="mb-4">Our Mission</h2>
+      <p class="lead">
+        We believe in a world where clean technology transforms lives and ecosystems. We focus on deploying accessible, green, and innovative tools in rural and urban areas to promote sustainability, self-reliance, and environmental restoration.
+      </p>
+    </section>
+
+    <!-- Projects Overview -->
+    <section class="container text-center">
+      <h2 class="mb-3" data-aos="fade-up">What We Do</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <h5><i class="bi bi-lightning-charge"></i> Renewable Energy</h5>
+          <p>Providing off-grid solar and wind energy to underserved communities.</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <h5><i class="bi bi-book"></i> Climate Education</h5>
+          <p>Training youth and schools on sustainability, recycling, and conservation.</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <h5><i class="bi bi-tree"></i> Ecosystem Restoration</h5>
+          <p>Organizing reforestation, cleanups, and biodiversity restoration projects.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="mt-4 pt-4 pb-3 text-white" style="background: rgba(0,0,0,0.3);" data-aos="fade-up">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5>About GreNaTech</h5>
+          <p>
+            GreNaTech is committed to building a sustainable future through innovation, green technology, and community outreach.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="projects.html" class="text-white text-decoration-none">Projects</a></li>
+            <li><a href="donate.html" class="text-white text-decoration-none">Donate</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Contact</h5>
+          <p>Email: info@grenatech.org</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Location: Accra, Ghana</p>
+          <div class="footer-social mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 GreNaTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      mirror: true,
+    });
+
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function () {
+      backToTop.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+        ? "block" : "none";
+    };
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
