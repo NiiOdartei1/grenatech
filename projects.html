@@ -14,11 +14,26 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #2c618d86, #b870f3);
-      color: #fff;
-      overflow-x: hidden;
-    }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(270deg, #2c618d, #b870f3, #28a745, #f39c12, #3498db);
+  background-size: 1000% 1000%;
+  animation: gradientFlow 30s ease infinite;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
     .navbar {
       background-color: rgba(0, 0, 0, 0.3);
@@ -115,7 +130,7 @@
 
 <!-- Current Project -->
 <section class="projects-section container">
-  <h2 data-aos="fade-up">📌 Current Project</h2>
+  <h2 data-aos="fade-up">📌 Current Project</h2><hr>
   <div data-aos="fade-up">
     <h3 class="mb-3"><i class="bi bi-droplet-half me-2 text-info"></i>Recirculating Aquaculture System (RAS) Water Quality Monitoring</h3>
     <p>
@@ -141,15 +156,60 @@
   </div>
 </section>
 
-<section class="projects-section container">
-  <h2 data-aos="fade-up">🗓️ Upcoming Project</h2>
+<section class="projects-section container mt-4">
+  <h2 data-aos="fade-up">🗓️ Upcoming Project</h2><hr>
 
-  <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
+  <!-- EcoSmart Storage & Transport -->
+  <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="50">
     <div class="col-md-5">
-      <img src="https://i.postimg.cc/mgB8fHhv/hand-plough.jpg" alt="Hand Plough" class="img-fluid rounded" />
+      <img src="https://i.postimg.cc/YqC7mszg/FLINTHAM-CABINS-16-person-Ecosmart-Solar-outside-768x576.png" alt="EcoSmart Storage" class="img-fluid rounded" />
     </div>
     <div class="col-md-7 ps-md-4">
-      <h3><i class="bi bi-tools me-2 text-warning"></i>Manufacturing of Simple Hand Plough</h3>
+      <h3><i class="bi bi-cpu-fill me-2 text-info"></i>EcoSmart Storage & Transport</h3><hr>
+      <p>
+        <strong>EcoSmart Storage & Transport</strong> is an upcoming flagship initiative aimed at revolutionizing how post-harvest crops are stored and moved in developing regions. The system will integrate AI-powered analytics, real-time IoT sensors, and mobile logistics to protect food quality, reduce post-harvest losses, and ensure supply chain transparency from farm to market.
+      </p>
+
+      <p>
+        At its core, EcoSmart Storage utilizes a network of embedded environmental sensors to monitor key storage parameters such as:
+        <ul>
+          <li>Ambient temperature and humidity</li>
+          <li>Crop moisture content</li>
+          <li>Gas levels (e.g., ethylene, CO₂) indicating ripening or spoilage</li>
+          <li>pH and microbial growth indicators</li>
+        </ul>
+        This data is processed using AI models that detect anomalies, forecast shelf life, and send alerts to stakeholders via a mobile dashboard—allowing for rapid response to potential spoilage conditions.
+      </p>
+
+      <p>
+        The <strong>EcoTransport</strong> extension ensures these smart capabilities are not limited to fixed storage units. It equips transport vehicles—especially trucks and rural delivery vans—with ruggedized versions of the same smart sensors and data loggers. These vehicles become part of a "mobile cold chain", maintaining optimal crop conditions throughout transportation. The system features:
+        <ul>
+          <li>Solar-powered cooling and sensor systems</li>
+          <li>GPS-tracked route optimization for faster delivery</li>
+          <li>Real-time driver and logistics team alerts on temperature excursions</li>
+        </ul>
+      </p>
+
+      <p>
+        The goal is not only to preserve crop quality but also to empower farmers and cooperatives with transparent, data-driven decision-making. With spoilage rates reduced and quality verifiable, smallholder farmers gain better leverage in pricing negotiations, and local markets can depend on a more reliable food supply chain.
+      </p>
+
+      <p>
+        <strong>Sustainability is built in</strong>: EcoSmart Storage is designed to run on off-grid power sources (solar/battery), use biodegradable insulation materials, and ensure low-energy operation. All hardware is modular and repairable, promoting circular design principles and long-term affordability.
+      </p>
+
+      <p>
+        The pilot phase will begin in partnership with farming communities in Ghana’s Eastern and Northern Regions, with future expansion planned across West Africa.
+      </p>
+    </div>
+  </div>
+  
+  <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
+    <div class="col-md-5">
+      <img src="https://i.postimg.cc/cLj1Ngbr/Hand-Plough.png" alt="Hand Plough" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-7 ps-md-4">
+      <h3><i class="bi bi-tools me-2 text-warning"></i>Manufacturing of Simple Hand Plough</h3><hr>
       <p>
         As part of our commitment to supporting smallholder farmers, this project focuses on the local manufacturing of durable, affordable 
         hand ploughs. These tools will improve soil preparation efficiency, reduce manual labor, and promote sustainable farming practices 
@@ -160,14 +220,14 @@
 </section>
 
 <section class="projects-section container">
-  <h2 data-aos="fade-up">🔮 Future Projects</h2>
+  <h2 data-aos="fade-up">🔮 Future Projects</h2><hr>
 
   <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="150">
     <div class="col-md-5">
-      <img src="https://i.postimg.cc/P5j6r1jH/solar4schools.jpg" alt="Solar4Schools" class="img-fluid rounded" />
+      <img src="https://i.postimg.cc/kMcfYx2F/Buncombe-Solar-Install-Pic-2-e1725818820466-1024x577.jpg" alt="Solar4Schools" class="img-fluid rounded" />
     </div>
     <div class="col-md-7 ps-md-4">
-      <h3><i class="bi bi-sun-fill me-2 text-warning"></i>Solar4Schools</h3>
+      <h3><i class="bi bi-sun-fill me-2 text-warning"></i>Solar4Schools</h3><hr>
       <p>
         The Solar4Schools project aims to bridge the energy gap in rural schools by providing sustainable solar-powered electricity systems. 
         This ensures that students and teachers have continuous access to lighting, internet, and digital learning tools, enabling a better 
@@ -178,10 +238,10 @@
 
   <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-up" data-aos-delay="200">
     <div class="col-md-5">
-      <img src="https://i.postimg.cc/XNwKyNXn/ewaste-to-wealth.jpg" alt="E-Waste to Wealth" class="img-fluid rounded" />
+      <img src="https://i.postimg.cc/7Pn2HM7C/waste-to-wealth.jpg" alt="E-Waste to Wealth" class="img-fluid rounded" />
     </div>
     <div class="col-md-7 pe-md-4">
-      <h3><i class="bi bi-recycle me-2 text-success"></i>E-Waste to Wealth</h3>
+      <h3><i class="bi bi-recycle me-2 text-success"></i>E-Waste to Wealth</h3><hr>
       <p>
         Through this initiative, we educate local communities on proper electronic waste management. Participants learn to disassemble, 
         repurpose, and recycle electronics, creating opportunities for eco-friendly income generation while reducing environmental harm 
@@ -192,10 +252,10 @@
 
   <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="250">
     <div class="col-md-5">
-      <img src="https://i.postimg.cc/G3NMQyWB/greencoding.jpg" alt="GreenCoding Bootcamps" class="img-fluid rounded" />
+      <img src="https://i.postimg.cc/tJNSDZYr/bootcamp.png" alt="GreenCoding Bootcamps" class="img-fluid rounded" />
     </div>
     <div class="col-md-7 ps-md-4">
-      <h3><i class="bi bi-laptop-code me-2 text-info"></i>GreenCoding Bootcamps</h3>
+      <h3><i class="bi bi-laptop-code me-2 text-info"></i>GreenCoding Bootcamps</h3><hr>
       <p>
         Our GreenCoding Bootcamps equip youth and students with coding and digital innovation skills. The curriculum blends software 
         development with sustainability challenges, enabling participants to build digital tools that promote climate action, 
@@ -206,10 +266,10 @@
 
   <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-up" data-aos-delay="300">
     <div class="col-md-5">
-      <img src="https://i.postimg.cc/8CtsTYr6/dronetreeplanting.jpg" alt="TreeTech" class="img-fluid rounded" />
+      <img src="https://i.postimg.cc/PrNYSvpP/tree-tech-science-logo-template-260nw-1448003717.png" alt="TreeTech" class="img-fluid rounded" />
     </div>
     <div class="col-md-7 pe-md-4">
-      <h3><i class="bi bi-drone me-2 text-light"></i>TreeTech – Q4 2025</h3>
+      <h3><i class="bi bi-drone me-2 text-light"></i>TreeTech – Q4 2027</h3><hr>
       <p>
         TreeTech is a reforestation project that uses drones to plant trees and monitor forests. By leveraging drone technology, 
         we aim to restore degraded lands, combat desertification, and accelerate ecosystem recovery in areas suffering from deforestation.
@@ -219,10 +279,10 @@
 
   <div class="row align-items-center" data-aos="fade-up" data-aos-delay="350">
     <div class="col-md-5">
-      <img src="https://i.postimg.cc/XvPY9VdD/eco-smart-home.jpg" alt="EcoSmart Homes" class="img-fluid rounded" />
+      <img src="https://i.postimg.cc/zX9bptYc/Ecosmart-home.jpg" alt="EcoSmart Homes" class="img-fluid rounded" />
     </div>
     <div class="col-md-7 ps-md-4">
-      <h3><i class="bi bi-house-heart-fill me-2 text-danger"></i>EcoSmart Homes – Early 2026</h3>
+      <h3><i class="bi bi-house-heart-fill me-2 text-danger"></i>EcoSmart Homes – Early 2028</h3><hr>
       <p>
         EcoSmart Homes will showcase how affordable, sustainable housing can be achieved using recycled materials and renewable energy 
         systems. These smart homes will integrate solar panels, water recycling, and energy-efficient technologies to promote climate-resilient 
