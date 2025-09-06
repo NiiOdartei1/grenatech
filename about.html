@@ -183,6 +183,11 @@
     .fade-up { opacity:0; transform: translateY(18px); transition: all .8s cubic-bezier(.2,.9,.2,1); }
     .fade-up.visible { opacity:1; transform: none; }
 
+    .partner-section {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%); /* stretch outside container */
+    }
+
     @media (max-width: 992px) {
       .team-member img { height:220px; }
     }
@@ -453,7 +458,6 @@
 
     <!-- Partners -->
     <section aria-labelledby="partners-title">
-      <div class="container container-lg">
         <h2 class="section-title" id="partners-title">Our Partners</h2>
 
         <div class="partner-section">
@@ -537,3 +541,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
