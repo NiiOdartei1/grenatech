@@ -108,24 +108,24 @@
 
     /* Partners (we'll keep the horizontal scrolling inside the footer area) */
     .partners-bar {
-      background: var(--partner-bg);
-      padding: 18px 10px;
-      border-radius: 10px;
       overflow: hidden;
+      white-space: nowrap;
+      position: relative;
     }
 
     .scrolling-wrapper {
-      display:flex;
-      align-items:center;
-      gap: 36px;
-      width: max-content;
-      animation: scrollLogos 55s linear infinite;
+      display: flex;
+      gap: 30px; /* 👈 space between logos */
+      animation: scroll 40s linear infinite;
+      align-items: center;
     }
 
-    .partner-logo{
-      height:64px; filter:grayscale(100%) contrast(1.05) brightness(1.05);
-      transition:transform .25s ease, filter .25s ease;
+    .partner-logo {
+      height: 50px;
+      width: auto;
+      flex-shrink: 0;
     }
+    
     .partner-logo:hover{ transform:scale(1.06); filter:none; }
 
     @keyframes scrollLogos {
@@ -489,3 +489,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
