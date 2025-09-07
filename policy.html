@@ -1,267 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - GreNaTech Limited</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreNaTech Workplace Policy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-  :root {
-    --primary-bg: linear-gradient(135deg, #7b5dc2, #9ce0d2);
-    --light-text: #fff;
-    --overlay-bg: rgba(0, 0, 0, 0.75);
-  }
-
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--primary-bg);
-    color: var(--light-text);
-    overflow-x: hidden;
-  }
-
-  nav.navbar {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .navbar-brand, .nav-link {
-    color: var(--light-text) !important;
-  }
-
-  .nav-link:hover {
-    color: #d1ecff !important;
-  }
-
-  header {
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  section {
-    padding: 60px 20px;
-  }
-
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-
-  .gallery-img {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    transition: transform 0.4s ease;
-  }
-
-  .gallery-img:hover {
-    transform: scale(1.03);
-  }
-
-  .section-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  .icon-list li {
-    margin-bottom: 10px;
-  }
-
-  .icon-list i {
-    margin-right: 10px;
-  }
-
-  .fade-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-
-  .fade-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Team Section */
-  .team-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .team-member {
-    position: relative;
-    width: 100%;
-    max-width: 250px;
-    text-align: center;
-    background: rgba(255,255,255,0.03);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-  }
-
-  .team-member img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .team-member:hover {
-    transform: scale(1.03);
-  }
-
-  .member-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--overlay-bg);
-    color: var(--light-text);
-    padding: 10px;
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-  }
-
-  .team-member:hover .member-overlay {
-    opacity: 1;
-  }
-
-  .social-icons {
-    margin-top: 8px;
-  }
-
-  .social-icons a {
-    color: var(--light-text);
-    margin: 0 6px;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    color: #0dcaf0;
-  }
-
-  /* Partners Section */
-  .partner-section {
-    background: linear-gradient(to right, #1c1c1c, #3c3c3c);
-    padding: 30px 0;
-  }
-
-  .partner-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .partner-scroll {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .scrolling-wrapper {
-    display: flex;
-    width: max-content;
-    animation: scrollLogos 60s linear infinite;
-  }
-
-  .logo-set {
-    display: flex;
-    align-items: center;
-  }
-
-  .partner-logo {
-    height: 70px;
-    margin: 0 40px;
-    filter: grayscale(100%) brightness(1.2);
-    transition: transform 0.3s;
-  }
-
-  .partner-logo:hover {
-    transform: scale(1.1);
-    filter: none;
-  }
-
-  @keyframes scrollLogos {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  footer {
-    width: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
-    color: #ccc;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-
-  /* Responsive Adjustments */
-  @media (max-width: 992px) {
-    .team-member img {
-      height: 250px;
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9faf9;
+      color: #333;
+      line-height: 1.7;
     }
-  }
-
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2rem;
+    .policy-header {
+      background: linear-gradient(120deg, #3cb371, #2e8b57);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
     }
-
-    .team-wrapper {
-      flex-direction: column;
-      align-items: center;
+    .policy-header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
     }
-
-    .gallery-row {
-      flex-direction: column;
+    .policy-section {
+      margin-bottom: 2rem;
     }
-
-    .partner-logo {
-      height: 50px;
-      margin: 0 20px;
+    .policy-section h3 {
+      color: #2e8b57;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
     }
-  }
-
-  @media (max-width: 576px) {
-    .section-title {
-      font-size: 1.6rem;
+    .closing-note {
+      background-color: #e8f5e9;
+      border-left: 5px solid #2e8b57;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      font-style: italic;
+      margin-top: 2rem;
     }
-
-    .team-member img {
-      height: 220px;
-    }
-  }
-</style>
-
+  </style>
 </head>
-
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" data-aos="fade-down">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="https://i.postimg.cc/8P9rd9p4/Gre-Na-Tech-logo.png" alt="GreNaTech Logo" style="height: 50px; width: auto;" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon bg-light"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -271,273 +65,83 @@
     </div>
   </nav>
 
-  <header class="text-center px-3 py-5">
-  <h1>About GreNaTech</h1>
-  <div class="mt-4 text-start mx-auto" style="max-width: 900px; font-size: 1.05rem;">
-    <p>In a world increasingly threatened by environmental degradation, climate change, and unsustainable development, GreNaTech emerges as a visionary force dedicated to harnessing the power of technology for ecological transformation. We are more than an organization — we are a mission-driven collective of environmentalists, engineers, educators, and changemakers committed to shaping a greener, smarter future.</p>
-    <p>At GreNaTech, we believe that technology is not just a tool for efficiency — it is a catalyst for environmental justice. Founded on the principle that innovation should uplift both people and planet, our work revolves around building bridges between communities and sustainable solutions. Whether through renewable energy, smart agriculture, climate education, or clean water innovations, we create integrated programs that solve real-world problems at the grassroots level.</p>
-    <p>Our journey began with a simple yet powerful question: <em>“What if technology could heal the planet rather than harm it?”</em> From this vision, GreNaTech was born — with the goal of merging modern technology and indigenous knowledge systems to empower the most vulnerable populations in the fight against climate change. Today, we continue to answer that question through action — one project, one community, and one partnership at a time.</p>
-    <p>Our organization operates in three key pillars: <strong>Technology, Education, and Sustainability</strong>. Under the technology arm, we develop and deploy solar-powered solutions, data-driven monitoring systems, and climate-smart innovations that help communities thrive. Our educational programs are designed to equip the next generation with the tools and knowledge they need to be effective environmental stewards — from primary schools to adult training initiatives. And our sustainability projects range from reforestation and permaculture gardens to plastic recycling and green enterprise incubation.</p>
-    <p>One of our core beliefs is inclusivity. We understand that the climate crisis affects people differently, especially marginalized and underserved communities. That is why GreNaTech prioritizes local engagement, participatory development, and gender equity in all our operations. We work with youth groups, women cooperatives, schools, traditional leaders, and governments to ensure that every voice is heard, and every solution is tailored to the unique needs of the community.</p>
-    <p>Over the years, we have formed strong partnerships with local and international stakeholders who share our values. Our collaborations span development agencies, academic institutions, private tech firms, grassroots organizations, and philanthropic foundations. These partnerships allow us to scale our impact, innovate collaboratively, and amplify voices from the Global South on a global stage.</p>
-    <p>Impact is at the heart of everything we do. We don’t believe in quick fixes or one-off interventions. Instead, we commit to long-term engagement and measurable outcomes. Our solar education hubs have brought light to over 100 rural classrooms. Our reforestation projects have planted more than 50,000 indigenous trees across degraded landscapes. And our digital learning platforms have reached thousands of learners with green curricula that blend science, culture, and action.</p>
-    <p>The story of GreNaTech is also the story of resilience. Operating in challenging environments with limited resources has never deterred us. In fact, it has inspired us to be more creative, agile, and grounded. Our teams are known not just for their expertise, but for their empathy, humility, and determination to leave no one behind. Whether biking through remote villages to conduct climate training, coding open-source apps for farmers, or facilitating zero-waste workshops in urban schools — we show up, and we stay.</p>
-    <p>As we look ahead, our vision is bold: to build a global network of green innovation centers that democratize access to environmental technology. We aim to expand our work into new countries, launch a fellowship program for eco-tech leaders, and co-create climate resilience hubs powered entirely by clean energy. We are investing in research, policy advocacy, and digital platforms that make sustainable living not just possible, but desirable.</p>
-    <p>But we cannot do it alone. Climate action is a collective responsibility, and your involvement matters more than ever. Whether you are a student, a scientist, an artist, a donor, or a curious citizen, there is a place for you at GreNaTech. You can volunteer your time, share your ideas, support a project, or simply help us spread the message. Every small act adds up to a world of change.</p>
-    <p>Together, we can reimagine a future where communities are resilient, ecosystems are restored, and technology serves the common good. A future where every innovation brings us closer to balance — with nature, with each other, and with our own humanity.</p>
-    <p class="fw-bold mt-4" style="font-size: 1.1rem;">Join us. Be the power behind the green revolution. Welcome to GreNaTech.</p>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="policy-header">
+    <h1>GreNaTech Workplace Policy</h1>
+    <p class="lead mt-2">Cultivating a workplace that reflects the future we strive to build</p>
+  </header>
 
+  <!-- Main Content -->
+  <main class="container my-5">
+    <p>
+      At GreNaTech, our workplace culture is guided by the same principles that drive our mission: 
+      sustainability, inclusivity, innovation, and community empowerment. We believe that the way 
+      we work should reflect the future we are striving to build — equitable, regenerative, and 
+      respectful of both people and planet.
+    </p>
 
-  <section>
-  <div class="container">
-
-    <h2 class="section-title">Who We Are</h2>
-    <div class="row align-items-center mb-5 fade-section">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="https://i.postimg.cc/qMbc8xDz/community-entertainment.jpg" class="gallery-img" alt="Our Team">
-      </div>
-      <div class="col-md-6 section-text">
-        <p>GreNaTech is a forward-thinking company that champions sustainability through the application of modern technology. Our team consists of environmentalists, engineers, and educators passionate about building a greener, smarter planet.</p>
-      </div>
+    <!-- Sections -->
+    <div class="policy-section">
+      <h3>1. Inclusivity & Equal Opportunity</h3>
+      <ul>
+        <li>We welcome and respect diversity in all forms — gender, ethnicity, background, and belief.</li>
+        <li>Every team member is given equal access to opportunities for growth, training, and leadership.</li>
+        <li>We actively encourage the participation of women, youth, and marginalized voices in our projects and decision-making.</li>
+      </ul>
     </div>
 
-    <!-- Mission (text right, image left) -->
-<h2 class="section-title">Our Mission</h2>
-<div class="row align-items-center mb-5 fade-section flex-md-row-reverse">
-  <div class="col-md-6 mb-4 mb-md-0">
-    <img src="https://i.postimg.cc/RZJtw5nD/community-mentorship.png" class="gallery-img" alt="Mission">
-  </div>
-  <div class="col-md-6 section-text">
-    <p>To empower communities by designing and deploying climate-resilient technologies and educational programs that create dignified livelihoods, restore ecosystems, and reduce vulnerability to climate change.</p>
-  </div>
-</div>
-
-<!-- Vision (text left, image right) -->
-<h2 class="section-title">Our Vision</h2>
-<div class="row align-items-center mb-5 fade-section">
-  <div class="col-md-6 section-text">
-    <p>A world where technology and nature work together — farmers, communities and cities thriving through resilient systems that are equitable, regenerative and scalable.</p>
-  </div>
-  <div class="col-md-6 mb-4 mb-md-0">
-    <img src="https://i.postimg.cc/cH6tj5xN/tech.png" class="gallery-img" alt="Vision">
-  </div>
-</div>
-
-    <h2 class="section-title">What We Do</h2>
-    <div class="row align-items-center mb-5 fade-section flex-md-row-reverse">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="https://i.postimg.cc/HkFQNsgm/corporate-ladies.jpg" class="gallery-img" alt="Projects">
-      </div>
-      <div class="col-md-6 section-text">
-        <ul class="icon-list">
-          <li><i class="fas fa-solar-panel"></i> Solar and renewable energy installations</li>
-          <li><i class="fas fa-school"></i> Climate education programs for youth</li>
-          <li><i class="fas fa-seedling"></i> Tree planting and conservation initiatives</li>
-          <li><i class="fas fa-laptop-code"></i> Tech innovation for clean water and waste management</li>
-        </ul>
-      </div>
+    <div class="policy-section">
+      <h3>2. Collaboration & Participation</h3>
+      <ul>
+        <li>Our teams operate with openness, empathy, and humility.</li>
+        <li>Decision-making is participatory: we value ideas from every staff member, volunteer, and community partner.</li>
+        <li>We encourage cross-department collaboration to ensure integrated and innovative solutions.</li>
+      </ul>
     </div>
 
-    <h2 class="section-title">Join the Movement</h2>
-    <div class="row align-items-center mb-5 fade-section">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="https://i.postimg.cc/WzK34zSb/orphan.jpg" class="gallery-img" alt="Join Us">
-      </div>
-      <div class="col-md-6 section-text">
-        <p>Be a part of something bigger. Volunteer, donate, or partner with us to create scalable and lasting impact. Together, we can reimagine a cleaner and more sustainable planet.</p>
-      </div>
+    <div class="policy-section">
+      <h3>3. Professional Growth & Learning</h3>
+      <ul>
+        <li>Continuous learning is part of our DNA. We provide training, workshops, and mentorship to strengthen professional and technical skills.</li>
+        <li>Staff are encouraged to innovate, experiment, and share new ideas that support our mission of environmental sustainability.</li>
+        <li>We support work-life balance so that creativity and wellbeing thrive together.</li>
+      </ul>
     </div>
 
-  </div>
-</section>
-
-  <section>
-  <h2 class="section-title">Meet the Team</h2>
-  <div class="team-wrapper">
-    <!-- Team Member 1 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/9FPPKPgF/wisdom.jpg" alt="Wisdom A. Acquah">
-      <h5>Wisdom A. Acquah</h5>
-      <p>CEO & Assistant Director of Green Energy Department</p>
-      <div class="member-overlay">
-        “Leading with green vision.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
+    <div class="policy-section">
+      <h3>4. Ethical Responsibility & Sustainability</h3>
+      <ul>
+        <li>We uphold integrity, transparency, and accountability in all our work.</li>
+        <li>GreNaTech staff are expected to minimize waste, conserve resources, and adopt eco-friendly practices in daily operations.</li>
+        <li>Workplace decisions must align with our core mission of ecological justice and community empowerment.</li>
+      </ul>
     </div>
 
-    <!-- Team Member 2 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/qMf2DryD/joe_-_Copy.jpg" alt="Joseph Lamptey">
-      <h5>Joseph O. Lamptey</h5>
-      <p>Co-Founder & Director of IT Department</p>
-      <div class="member-overlay">
-        “Code green, live clean.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-github"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
+    <div class="policy-section">
+      <h3>5. Safety & Wellbeing</h3>
+      <ul>
+        <li>We maintain a safe, healthy, and respectful work environment.</li>
+        <li>Harassment, discrimination, or unsafe practices are not tolerated.</li>
+        <li>We promote both physical and mental wellbeing through supportive policies and flexible approaches to work.</li>
+      </ul>
     </div>
 
-    <!-- Team Member 3 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/rpdt32Wr/mary.jpg" alt="Mary">
-      <h5>Mary S. Selasie</h5>
-      <p>Co-founder & Director of Green Energy</p>
-      <div class="member-overlay">
-        “Empowering communities.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
-        </div>
-      </div>
+    <div class="policy-section">
+      <h3>6. Community & Impact-Driven Work</h3>
+      <ul>
+        <li>Our workplace extends beyond the office — into schools, farms, villages, and innovation hubs.</li>
+        <li>Employees are encouraged to engage directly with the communities we serve, practicing empathy and cultural respect.</li>
+        <li>Every role, from engineering to outreach, is measured by the impact it creates for people and the planet.</li>
+      </ul>
     </div>
 
-    <!-- Team Member 4 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/d19M5gTp/John.jpg" alt="John">
-      <h5>John A. Berniana</h5>
-      <p>Co-Founder & Director of Crop and Climate Department</p>
-      <div class="member-overlay">
-        “Turning plans into action.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
-        </div>
-      </div>
+    <!-- Closing Note -->
+    <div class="closing-note">
+      🌱 At GreNaTech, our workplace is not just where we work — it’s how we live our mission. 
+      We are committed to cultivating a supportive, inclusive, and innovative environment where 
+      everyone can thrive while contributing to a greener, smarter future.
     </div>
+  </main>
 
-    <!-- Team Member 5 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/WtctxFmD/Debora-Acquah.jpg" alt="Ernest">
-      <h5>Deborah Acquah</h5>
-      <p>Co-Founder, PRO and Marketing Director</p>
-      <div class="member-overlay">
-        “Turning plans into action.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team Member 6 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/4dTDpLcS/Ernest.jpg" alt="Ernest">
-      <h5>Ernest K. Nduakoh</h5>
-      <p>Main Director for Mechanisation</p>
-      <div class="member-overlay">
-        “Turning plans into action.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Team Member 7 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/Kz7VBfYQ/Vitah.jpg" alt="Vitah Owusu Ansah — Assistant Director for Mechanisation" loading="lazy">
-      <div class="meta">
-        <h5>Vitah Owusu Ansah</h5>
-        <p>Assistant Director — Mechanisation</p>
-      </div>
-      <div class="member-overlay">
-        Supporting on-ground implementation and technical training.
-        <div class="social-icons mt-2">
-          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team Member 8 -->
-    <div class="team-member">
-      <img src="https://i.postimg.cc/15D9F7Wx/Henrietta.jpg" alt="Henrietta">
-      <h5>Henrietta Adu Gyamfi</h5>
-      <p>Co-Founder & Director of Electrical and Electronics Department</p>
-      <div class="member-overlay">
-        “Turning plans into action.”
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section class="partner-section">
-  <h2>Our Partners</h2>
-  <div class="partner-scroll">
-    <div class="scrolling-wrapper">
-      <div class="logo-set">
-        <img src="https://i.postimg.cc/NGDCSs9d/Mastercard-Foundation-Logo.jpg" class="partner-logo" alt="Mastercard">
-        <img src="https://i.postimg.cc/hGR0h6QJ/AGRA-Logo-Big.png" class="partner-logo" alt="AGRA">
-        <img src="https://i.postimg.cc/xdG3m5L6/Graham-Foundation-Logo-Horizontal-RGB.png" class="partner-logo" alt="Graham">
-        <img src="https://i.postimg.cc/hjSb1mrc/unicef-logo-transparent-free-png.webp" class="partner-logo" alt="UNICEF">
-        <img src="https://i.postimg.cc/wv05fBfJ/Usaid-Logo.png" class="partner-logo" alt="USAID">
-        <img src="https://i.postimg.cc/J4mDD8pC/IFAD.png" class="partner-logo" alt="IFAD">
-        <img src="https://i.postimg.cc/LsrhHFJ7/AFY.gif" class="partner-logo" alt="AFY">
-        <img src="https://i.postimg.cc/RFKhhpf0/IDRC-logo.png" class="partner-logo" alt="IDRC">
-        <img src="https://i.postimg.cc/T1xwDjqJ/logo-adf-2025.webp" class="partner-logo" alt="ADF">
-        <img src="https://i.postimg.cc/NFx07ydq/OPEC-Fund-Logo.jpg" class="partner-logo" alt="OPEC">
-      </div>
-      <!-- Duplicate logos for seamless loop -->
-      <div class="logo-set">
-        <img src="https://i.postimg.cc/NGDCSs9d/Mastercard-Foundation-Logo.jpg" class="partner-logo" alt="Mastercard">
-        <img src="https://i.postimg.cc/hGR0h6QJ/AGRA-Logo-Big.png" class="partner-logo" alt="AGRA">
-        <img src="https://i.postimg.cc/xdG3m5L6/Graham-Foundation-Logo-Horizontal-RGB.png" class="partner-logo" alt="Graham">
-        <img src="https://i.postimg.cc/hjSb1mrc/unicef-logo-transparent-free-png.webp" class="partner-logo" alt="UNICEF">
-        <img src="https://i.postimg.cc/wv05fBfJ/Usaid-Logo.png" class="partner-logo" alt="USAID">
-        <img src="https://i.postimg.cc/J4mDD8pC/IFAD.png" class="partner-logo" alt="IFAD">
-        <img src="https://i.postimg.cc/LsrhHFJ7/AFY.gif" class="partner-logo" alt="AFY">
-        <img src="https://i.postimg.cc/RFKhhpf0/IDRC-logo.png" class="partner-logo" alt="IDRC">
-        <img src="https://i.postimg.cc/T1xwDjqJ/logo-adf-2025.webp" class="partner-logo" alt="ADF">
-        <img src="https://i.postimg.cc/NFx07ydq/OPEC-Fund-Logo.jpg" class="partner-logo" alt="OPEC">
-      </div>
-    </div>
-  </div>
-</section>
-
-  <footer>
-    &copy; 2025 GreNaTech. All rights reserved. | Designed with 💚 by the GreNaTech Team
-  </footer>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const faders = document.querySelectorAll(".fade-section");
-
-    function appearOnScroll() {
-      faders.forEach(fade => {
-        const rect = fade.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          fade.classList.add("visible");
-        }
-      });
-    }
-
-    window.addEventListener("scroll", appearOnScroll);
-    appearOnScroll(); // run once on load
-  });
-</script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
